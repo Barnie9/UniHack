@@ -1,8 +1,10 @@
 package com.example.unihack_be.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 public class DICOMImage {
 
     @Id
@@ -15,6 +17,5 @@ public class DICOMImage {
     @ManyToOne
     @JoinColumn(name = "appointment_id")
     private Appointment appointment;
-
 
 }

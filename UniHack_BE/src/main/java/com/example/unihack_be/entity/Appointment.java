@@ -2,12 +2,14 @@ package com.example.unihack_be.entity;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
 @Entity
+@Data
 public class Appointment {
 
     @Id
