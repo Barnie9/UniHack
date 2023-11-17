@@ -1,0 +1,1 @@
+export { PermissionTag } from './PermissionTag';

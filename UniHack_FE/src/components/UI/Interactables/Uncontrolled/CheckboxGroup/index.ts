@@ -1,0 +1,1 @@
+export { CheckboxGroupUncontrolled } from './CheckboxGroupUncontrolled';
