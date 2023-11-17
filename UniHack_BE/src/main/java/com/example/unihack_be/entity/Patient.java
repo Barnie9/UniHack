@@ -10,7 +10,6 @@ public class Patient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
     @Column
@@ -31,6 +30,15 @@ public class Patient {
     @Column
     private Gender gender;
 
+    @Column
+    private int age;
+
     @OneToMany(mappedBy = "patient")
     private List<MedicalFile> medicalFiles;
+
+    @OneToMany(mappedBy = "patient")
+    private List<Appointment> appointments;
+
+    @OneToMany(mappedBy = "patient")
+    private List<CancerType> cancerTypes;
 }
