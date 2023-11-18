@@ -1,10 +1,17 @@
 package com.example.unihack_be.entity;
 
+import com.example.unihack_be.dto.DoctorDTO;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Doctor {
 
     @Id
@@ -28,4 +35,5 @@ public class Doctor {
 
     @OneToMany(mappedBy = "doctor")
     private List<Appointment> appointments;
+
 }
