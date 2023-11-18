@@ -36,6 +36,8 @@ export interface OptionalIconProps extends SpacingOffsets {
   size?: (type: typeof IconSizes) => IconSizes;
   variant?: (type: typeof IconVariants) => IconVariants;
   onClick?: (e: React.MouseEvent) => void;
+  onMouseOver?: () => void;
+  onMouseOut?: () => void;
 }
 
 export type IconProps = OptionalIconProps & { svg: SvgComponent };
@@ -77,6 +79,8 @@ export const Icon = forwardRef<HTMLDivElement, IconProps>(
       size,
       variant,
       onClick,
+      onMouseOut,
+      onMouseOver,
     },
     ref
   ) => {
@@ -101,6 +105,8 @@ export const Icon = forwardRef<HTMLDivElement, IconProps>(
         title={showTooltip ? (title ? title : tooltip) : undefined}
         variant={iconVariant}
         size={iconSize}
+        onMouseOver={onMouseOver}
+        onMouseOut={onMouseOut}
         onClick={handleClick}
         aria-label={alt}
         id={id ?? alt?.replaceAll(" ", "").toLowerCase()}

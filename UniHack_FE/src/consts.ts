@@ -27,10 +27,6 @@ export const DOCUMENT_FILE_SIZE_LIMIT = 6000000;
 
 export const MAX_SAFE_INTEGER_VARIABLE_VALUE = 2147483647;
 
-export const VAR_LABEL_PATTERN = /^[^;,]+$/;
-
-export const JADBIO_PROBABILITIES_DENSITY_SEGMENTS = 8;
-
 export const DATE_REGEX = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
 export const DATE_TIME_REGEX =
   /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(2[0-3]|[01]?[0-9]):[0-5][0-9]:[0-5][0-9](?:Z|[+-](?:2[0-3]|[01][0-9]):[0-5][0-9])$/;
@@ -61,41 +57,6 @@ export const AVATARS_COLORS_X = [
   ColorsX.avatar.lightGreyBlue,
   ColorsX.avatar.heather,
   ColorsX.avatar.paleTeal,
-];
-
-export const CHART_HEIGHT = 450;
-
-export const CHART_COLORS = [
-  ColorsX.chart.primary.dark,
-  ColorsX.chart.red.dark,
-  ColorsX.chart.violet.dark,
-  ColorsX.chart.lightBlue.dark,
-  ColorsX.chart.lightGreen.dark,
-  ColorsX.chart.darkGreen.dark,
-  ColorsX.chart.orange.dark,
-  ColorsX.chart.yellow.dark,
-  ColorsX.chart.pink.dark,
-  ColorsX.chart.darkBlue.dark,
-  ColorsX.chart.primary.medium,
-  ColorsX.chart.red.medium,
-  ColorsX.chart.violet.medium,
-  ColorsX.chart.lightBlue.medium,
-  ColorsX.chart.lightGreen.medium,
-  ColorsX.chart.darkGreen.medium,
-  ColorsX.chart.orange.medium,
-  ColorsX.chart.yellow.medium,
-  ColorsX.chart.pink.medium,
-  ColorsX.chart.darkBlue.medium,
-  ColorsX.chart.primary.light,
-  ColorsX.chart.red.light,
-  ColorsX.chart.violet.light,
-  ColorsX.chart.lightBlue.light,
-  ColorsX.chart.lightGreen.light,
-  ColorsX.chart.darkGreen.light,
-  ColorsX.chart.orange.light,
-  ColorsX.chart.yellow.light,
-  ColorsX.chart.pink.light,
-  ColorsX.chart.darkBlue.light,
 ];
 
 export const keyMaps = {
@@ -132,3 +93,32 @@ export const STATUS_COLUMN = {
 // };
 
 export const ENTRY_FIELD_FORCE_DROPDOWN_THRESHOLD = 100;
+
+export const DEFAULT_DEBOUNCE_TIME = 300;
+export const REPORTS_DEBOUNCE_TIME = 400;
+
+export const TIMESTAMP_FORMAT = "HH:mm";
+export const DAY_FORMAT = "yyyy-LL-dd";
+export const NOTIFICATION_EVENTS_DAY_FORMAT = "LLL dd yyyy";
+export const NOTIFICATION_EVENT_DATE_FORMAT = "LLLL d yyyy, HH:mm";
+export const NOTIFICATION_HISTORY_TOOLTIP_DATE_FORMAT = "LLLL dd";
+export const DAYPICKER_FORMAT = "YYYY-MM-DD HH:mm";
+
+export const EMAIL = "";
+export const PHONE_NUMBER = "";
+
+export const LINE_DATA_POINTS_LIMIT = 60;
+export const BAR_DATA_POINTS_LIMIT = 9;
+export const PIXEL_TO_REM_RATIO = 10;
+
+export enum MetricType {
+  Instant = "instant",
+  Max = "max",
+  Min = "min",
+  Average = "average",
+  Demand = "demand",
+}
+
+export enum ErrorCode {
+  TokenNotValid = "token_not_valid",
+}

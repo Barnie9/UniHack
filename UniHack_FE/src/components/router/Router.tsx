@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { useScrollTop, useLogin } from "hooks";
 // import { Signup, Login, PasswordChangedPage } from "pages";
+import { Login } from "pages";
 
 import { GridProvider } from "./GridProvider";
 import { PrivateRoutes } from "./PrivateRoutes";
@@ -49,10 +50,8 @@ function Router() {
 			</Route> */}
       {/* <Route exact path={Routes.SignUp}>
         <Signup />
-      </Route>
-      <Route path="*">
-        <Login />
-      </Route> */}
+      </Route>*/}
+      <Route path="*" element={<Login />}></Route>
     </Routes>
   );
 }

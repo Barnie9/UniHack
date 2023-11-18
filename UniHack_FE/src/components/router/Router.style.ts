@@ -6,7 +6,6 @@ interface HandleProps {
 }
 
 export const Main = styled.main`
-  background-color: ${({ theme }) => theme.background};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,6 @@ export const StashHandle = styled.div<HandleProps>`
   padding: 1.6rem 0.4rem;
   width: 3.4rem;
   height: 16rem;
-  background: ${({ theme }) => theme.stashDrawer.background};
   z-index: 105;
 `;
 export const Arrow = styled(Icon)<HandleProps>`
@@ -44,5 +42,4 @@ export const CardsCount = styled.div`
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  color: ${({ theme }) => theme.h3};
 `;

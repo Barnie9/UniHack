@@ -5,3 +5,4 @@ export { MediaQueries, Sizes } from "./Sizes";
 export { Shadows } from "./Shadows";
 export { ScrollBarStyle } from "./Generics";
 export { ColorsX } from "./ColorsX";
+export { Layers } from "./Layers";
