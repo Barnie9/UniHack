@@ -8,5 +8,4 @@ import org.mapstruct.Mapper;
 public interface DICOMImageMapper {
     DICOMImageDTO map(DICOMImage dicomImage);
     DICOMImage map(DICOMImageDTO dicomImageDTO);
-
 }
