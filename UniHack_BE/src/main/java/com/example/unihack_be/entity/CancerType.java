@@ -17,9 +17,6 @@ public class CancerType {
     @Column
     private String type;
 
-    @Column
-    private String description;
-
     @ManyToOne
     @JoinColumn(name = "patient_id")
     private Patient patient;

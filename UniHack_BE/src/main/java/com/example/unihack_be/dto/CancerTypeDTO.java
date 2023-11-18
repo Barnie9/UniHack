@@ -13,6 +13,5 @@ import lombok.Setter;
 public class CancerTypeDTO {
     private Long id;
     private String type;
-    private String description;
-    private PatientDTO patientDTO;
+    private Long patientId;
 }

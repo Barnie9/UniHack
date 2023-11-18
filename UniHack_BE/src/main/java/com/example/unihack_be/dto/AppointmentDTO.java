@@ -17,6 +17,6 @@ public class AppointmentDTO {
     private Long id;
     private LocalDate date;
     private LocalTime hour;
-    private DoctorDTO doctorDTO;
-    private PatientDTO patientDTO;
+    private Long doctorId;
+    private Long patientId;
 }

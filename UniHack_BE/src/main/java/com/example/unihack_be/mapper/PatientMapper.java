@@ -17,6 +17,8 @@ public class PatientMapper {
         patient.setEmail(patientDTO.getEmail());
         patient.setPassword(patientDTO.getPassword());
         patient.setPhoneNumber(patientDTO.getPhoneNumber());
+        patient.setGender(patientDTO.getGender());
+        patient.setAge(patientDTO.getAge());
 
         return patient;
     }
@@ -29,6 +31,8 @@ public class PatientMapper {
         patientDTO.setEmail(patient.getEmail());
         patientDTO.setPassword(patient.getPassword());
         patientDTO.setPhoneNumber(patient.getPhoneNumber());
+        patientDTO.setGender(patient.getGender());
+        patientDTO.setAge(patient.getAge());
 
         return patientDTO;
     }
