@@ -66,3 +66,7 @@ export const Title = styled.div`
   justify-content: center;
   display: flex;
 `;
+
+export const Image = styled.img`
+  width: 50%;
+`;

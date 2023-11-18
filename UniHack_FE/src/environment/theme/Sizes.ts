@@ -46,7 +46,7 @@ export const MediaQueries = {
 
 export const MediaQueriesDevices = {
   app: `only screen and (max-width: ${Sizes.sm - 1}px)`,
-  phone: `only screen and (min-width: ${Sizes.sm}px) and (max-width: ${
+  phone: `only screen and (min-width: ${Sizes.xs}px) and (max-width: ${
     Sizes.md - 1
   }px)`,
   tablet: `only screen and (min-width: ${Sizes.md}px) and (max-width: ${
