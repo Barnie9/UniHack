@@ -34,13 +34,13 @@ export function Topbar() {
   //   });
   // });
 
-  const [{ data: user }, getUser] = useUser();
+  // const [{ data: user }, getUser] = useUser();
 
-  useEffectOnce(() => {
-    if (!user) {
-      getUser();
-    }
-  });
+  // useEffectOnce(() => {
+  //   if (!user) {
+  //     getUser();
+  //   }
+  // });
 
   return (
     <Container offset={offset}>

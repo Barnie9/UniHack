@@ -80,3 +80,4 @@ export { ReactComponent as ViewGrid } from "./designx/icons-view-grid.svg";
 export { ReactComponent as ViewList } from "./designx/icons-view-list.svg";
 export { ReactComponent as Workplace } from "./designx/icons-workplace.svg";
 export { ReactComponent as ZoomOut } from "./designx/icons-zoom-out.svg";
+export { ReactComponent as Dicom } from "./designx/dicom.svg";

@@ -9,6 +9,7 @@ export enum IconSizes {
   s = 1.2,
   m = 1.6,
   l = 2.4,
+  xl = 3.2,
   // more sizes might be added in the future
 }
 

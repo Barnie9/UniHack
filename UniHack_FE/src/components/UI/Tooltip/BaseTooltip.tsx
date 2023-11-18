@@ -44,7 +44,6 @@ interface VariantProps {
 }
 
 type Props = BaseTooltipProps & VariantProps;
-// TODO -> make children universal (alex s)
 
 export function BaseTooltip({
   height,

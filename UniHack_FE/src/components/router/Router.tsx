@@ -1,6 +1,6 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Sidebar, Topbar } from "components/layout";
+import { Sidebar, Topbar } from "components/layout";
 
 import { useScrollTop, useLogin } from "hooks";
 // import { Signup, Login, PasswordChangedPage } from "pages";
@@ -18,21 +18,33 @@ export enum DefaultRoutes {
   PasswordChanged = "/password-changed",
   Account = "/account",
   ChangePassword = "/account/change-password",
+  Dashboard = "/dashboard",
+  Dicom = "/dicom",
 }
 
 function Router() {
   useScrollTop();
   const [{ data: session }] = useLogin();
 
-  if (session) {
+  // TODO: to be deleted
+  const [value, setValue] = useState({});
+  useEffect(() => {
+    if (session) {
+      setValue(session);
+    }
+  }, [session]);
+
+  console.log(session);
+
+  if (value) {
     return (
-      <>
-        {/* <Topbar />
-        <Sidebar /> */}
+      <React.Fragment>
+        <Topbar />
+        <Sidebar />
         <Suspense fallback={<div>Loading..</div>}>
           <PrivateRoutes />
         </Suspense>
-      </>
+      </React.Fragment>
     );
   }
   return (
@@ -51,7 +63,7 @@ function Router() {
       {/* <Route exact path={Routes.SignUp}>
         <Signup />
       </Route>*/}
-      <Route path="*" element={<Login />}></Route>
+      <Route path="/" element={<Login />}></Route>
     </Routes>
   );
 }

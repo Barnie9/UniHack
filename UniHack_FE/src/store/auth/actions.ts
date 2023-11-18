@@ -112,13 +112,16 @@ export const login =
     const activityId = uuid();
 
     try {
-      dispatch(beginActivity({ type: ActionType.LOGIN, uuid: activityId }));
-      const { access, refresh } = await context.api.auth().login(creds);
-      Storage.set((k) => k.AccessToken, access);
-      Storage.set((k) => k.RefreshToken, refresh);
-      Storage.set((k) => k.Username, creds.username);
+      // dispatch(beginActivity({ type: ActionType.LOGIN, uuid: activityId }));
+      // const { access, refresh } = await context.api.auth().login(creds);
+      // Storage.set((k) => k.AccessToken, access);
+      // Storage.set((k) => k.RefreshToken, refresh);
+      // Storage.set((k) => k.Username, creds.username);
+      // dispatch(
+      //   loginAction({ token: access, refresh, username: creds.username })
+      // );
       dispatch(
-        loginAction({ token: access, refresh, username: creds.username })
+        loginAction({ token: "test", refreshToken: "test", username: "larisa" })
       );
     } catch (e) {
       dispatch(

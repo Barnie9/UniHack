@@ -35,6 +35,7 @@ interface FormValues {
 }
 
 export function Login() {
+  const { routes, navigate } = useNavigation();
   const {
     errors,
     touched,
@@ -61,10 +62,10 @@ export function Login() {
         username: values.username,
         password: values.password,
       });
+      navigate(routes.dashboard.base);
     },
   });
 
-  const { routes } = useNavigation();
   const [showPassword, setShowPassword] = useState(false);
   const [{ loading, error }, login] = useLogin();
   const isPhone = useMediaQuery(MediaQueriesDevices.phone);

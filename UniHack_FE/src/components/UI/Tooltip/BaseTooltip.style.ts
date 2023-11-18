@@ -53,7 +53,7 @@ interface ArrowProps {
 
 export const Arrow = styled.div<ArrowProps>`
   position: absolute;
-  background-color: inherit;
+  background-color: ${Colors.gray.lightest};
   top: ${({ position }) => position === "bottom" && "-0.5rem"};
   right: ${({ position }) => position === "left" && "-0.5rem"};
   left: ${({ position }) => position === "right" && "-0.5rem"};
@@ -64,5 +64,8 @@ export const Arrow = styled.div<ArrowProps>`
 `;
 
 export const Text = styled.span`
+  border-radius: 0.4rem;
+  padding: 1rem;
   font-size: 1.6rem;
+  background-color: ${Colors.gray.lightest};
 `;

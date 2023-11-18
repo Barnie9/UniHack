@@ -17,6 +17,7 @@ export function useNavigation() {
     dashboard: {
       base: "/dashboard",
     },
+    dicom: "/dicom",
   };
 
   function navigate(pathname: string, search?: Search) {

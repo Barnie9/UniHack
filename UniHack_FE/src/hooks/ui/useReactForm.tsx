@@ -45,7 +45,7 @@ export function useReactForm<T extends FieldValues>({
   const methodsAndState = useForm<T>({
     mode,
     defaultValues: initialValues,
-    resolver: validationSchema ? yupResolver(validationSchema) : undefined,
+    // resolver: validationSchema ? yupResolver(validationSchema) : undefined,
     reValidateMode,
     shouldFocusError,
     shouldUnregister,

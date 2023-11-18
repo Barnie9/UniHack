@@ -31,19 +31,19 @@ import {
 export default function () {
   const { routes, navigate } = useNavigation();
 
-  const logout = useLogout();
-  const [{ data: user, loaded, loading }] = useUser();
-  const [modalProps, openModal] = useModal();
+  // const logout = useLogout();
+  // const [{ data: user, loaded, loading }] = useUser();
+  // const [modalProps, openModal] = useModal();
   // const [, setNavbarFeatures] = useNavbarFeatures();
 
   // useEffectOnce(() => {
   // 	setNavbarFeatures({ date: false, device: false });
   // });
 
-  function handleLogout() {
-    logout();
-    navigate(routes.root);
-  }
+  // function handleLogout() {
+  //   logout();
+  //   navigate(routes.root);
+  // }
   return (
     <PageContainer>
       {/* <Loader loading={loading} condition={!loaded}>

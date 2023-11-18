@@ -40,7 +40,7 @@ export const Question = styled(Typography.Caption)`
   text-align: center;
 
   @media ${MediaQueriesDevices.desktop} {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 `;
 

@@ -20,6 +20,7 @@ export const Container = styled.nav<ContainerProps>`
   position: fixed;
   padding-top: 1.2rem;
   padding-bottom: 4rem;
+  background-color: ${Colors.gray.lightest};
   > div {
     margin-bottom: 2rem;
   }
