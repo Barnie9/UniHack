@@ -27,9 +27,10 @@ function Router() {
   const [{ data: session }] = useLogin();
 
   // TODO: to be deleted
-  const [value, setValue] = useState({});
+  const [value, setValue] = useState(null);
   useEffect(() => {
     if (session) {
+      // @ts-ignore
       setValue(session);
     }
   }, [session]);
