@@ -10,6 +10,5 @@ import lombok.*;
 public class DICOMImageDTO {
     private Long id;
     private String path;
-    private Appointment appointment;
-
+    private AppointmentDTO appointmentDTO;
 }
