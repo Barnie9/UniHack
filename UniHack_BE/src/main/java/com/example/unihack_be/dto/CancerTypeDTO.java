@@ -15,5 +15,4 @@ public class CancerTypeDTO {
     private String type;
     private String description;
     private PatientDTO patientDTO;
-
 }

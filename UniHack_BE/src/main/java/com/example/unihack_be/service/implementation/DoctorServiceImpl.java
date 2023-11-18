@@ -1,6 +1,5 @@
 package com.example.unihack_be.service.implementation;
 
-import com.example.unihack_be.custom_exceptions.DoctorNotFoundException;
 import com.example.unihack_be.dto.DoctorDTO;
 import com.example.unihack_be.entity.Doctor;
 import com.example.unihack_be.mapper.DoctorMapper;
@@ -10,9 +9,7 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

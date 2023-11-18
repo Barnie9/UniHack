@@ -34,6 +34,7 @@ public class Patient {
     private String phoneNumber;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 
     @Column

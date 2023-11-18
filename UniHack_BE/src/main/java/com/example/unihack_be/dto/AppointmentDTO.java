@@ -19,5 +19,4 @@ public class AppointmentDTO {
     private LocalTime hour;
     private DoctorDTO doctorDTO;
     private PatientDTO patientDTO;
-
 }

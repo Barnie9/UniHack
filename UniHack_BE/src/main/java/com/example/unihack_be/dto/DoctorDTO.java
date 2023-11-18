@@ -17,5 +17,4 @@ public class DoctorDTO {
     private String email;
     private String password;
     private String phoneNumber;
-
 }

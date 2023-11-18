@@ -1,6 +1,5 @@
 package com.example.unihack_be.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -36,7 +35,4 @@ public class Appointment {
 
     @OneToMany(mappedBy = "appointment")
     private List<DICOMImage> dicomImages;
-
-
-
 }

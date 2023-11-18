@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/doctors")
 public class DoctorController {
-
     private final DoctorService doctorService;
 
     @Autowired
